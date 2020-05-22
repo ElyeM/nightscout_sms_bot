@@ -33,7 +33,7 @@ To add another allowed number to use this bot, go to your Heroku dashboard click
  
  
 
-
-This is largely based on the TextEverything project (See information below). 
+# Thanks
+This is largely based on the TextEverything project (See ORIG_README for details). 
 I added a nightsout plugin, and refactored the code it should be easy deployable to heroku. 
 It is using environment variables instead of config file.
