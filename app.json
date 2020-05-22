@@ -1,0 +1,45 @@
+{
+    "name": "Nightscout SMS Bot",
+    "env": {
+        "nightscoutURL": {
+            "description": "Your Nightscout URL, Example: https://{YOUR_WEBSITE_NAME}.herokuapp.com/api/v1/entries/current.json",
+            "value": "",
+            "required": true
+          },
+          "accountSid": {
+            "description": "Your twilio account SID",
+            "value": "",
+            "required": true
+          },
+          "authToken": {
+            "description": "Your twilio auth token",
+            "value": "",
+            "required": true
+          },
+          "phoneNumber": {
+            "description": "Your twilio phone number",
+            "value": "",
+            "required": true
+          },
+          "allowedNumbers": {
+            "description": "Phone Numbers that will be allowed to use this Bot (Example: +13473473477). Note: use a spcae if you want to specify multiple numbers, any other phone number not in that list will be ignored.",
+            "value": "",
+            "required": true
+          },
+          "webhookUrl": {
+            "description": "The full webwook URL. Example: https://{YOUR_WEBSITE_NAME}.herokuapp.com/texteverything/message",
+            "value": "",
+            "required": true
+          },
+          "webhook_path": {
+            "description": "The webook path",
+            "value": "/texteverything/message",
+            "required": true
+          },
+          "express_port": {
+            "description": "The express port",
+            "value": "1337",
+            "required": false
+          }
+    }
+}

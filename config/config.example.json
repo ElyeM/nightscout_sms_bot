@@ -1,0 +1,16 @@
+{
+	"twilio": {
+		"accountSid": "",
+		"authToken": "",
+		"phoneNumber": "",
+		"allowedNumbers": [
+			"+12345678901"
+		],
+		"webhookUrl": "",
+		"webhook_path": "/texteverything/message"
+	},
+
+	"express": {
+		"port": "1337"
+	}
+}
