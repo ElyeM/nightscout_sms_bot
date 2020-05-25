@@ -31,7 +31,7 @@ To verify another number in Twilio, go to https://www.twilio.com/console/phone-n
 To add another allowed number to use this bot, go to your Heroku dashboard click on your app > Settings > Reveal Config Vars >  click on the edit button next to allowedNumbers and add a space and the new number.  
 
  
- 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ElyeM/nightscout_sms_bot) 
 
 # Thanks
 This is largely based on the TextEverything project (See ORIG_README for details). 
