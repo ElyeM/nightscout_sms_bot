@@ -43,7 +43,7 @@ function getBGData(callback){
       let actualtime = new Date(date);
       let delta = Math.round(bg - bgPrevious);
       let displayDelta = Math.sign(delta)==1 ? "+" + delta : delta;
-      let message =  "The last reading was "+bg+" ("+displayDelta+") and the direction is "+direction+". Reading time: "+ moment(actualtime, "YYYYMMDD").fromNow(); 
+      let message =  "The last reading was "+bg+" ("+delta+") and the direction is "+direction+". Reading time: "+ moment(actualtime, "YYYYMMDD").fromNow(); 
       callback(message);
     });
   
