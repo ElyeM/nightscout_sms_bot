@@ -35,11 +35,13 @@ function getBGData(callback){
     resp.on('end', () => {
       //console.log(JSON.parse(data)[0]);
       let parsedResponse = JSON.parse(data)[0];
+      let parsedResponsePrevious = JSON.parse(data)[1];
       let bg = parsedResponse.sgv;
+      let bgPrevious = parsedResponsePrevious.sgv
       let direction = parsedResponse.direction;
       let date = parsedResponse.date;
       let actualtime = new Date(date);
-      let delta = Math.round(parsedResponse.delta);
+      let delta = Math.round(bg - bgPrevious);
       let displayDelta = Math.sign(delta)==1 ? "+" + delta : delta;
       let message =  "The last reading was "+bg+" ("+displayDelta+") and the direction is "+direction+". Reading time: "+ moment(actualtime, "YYYYMMDD").fromNow(); 
       callback(message);
