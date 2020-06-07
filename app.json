@@ -2,7 +2,7 @@
     "name": "Nightscout SMS Bot",
     "env": {
         "nightscoutURL": {
-            "description": "Your Nightscout URL, Example: https://{YOUR_WEBSITE_NAME}.herokuapp.com/api/v1/entries/current.json",
+            "description": "Your Nightscout URL, Example: https://{YOUR_WEBSITE_NAME}.herokuapp.com/api/v1/entries/sgv.json",
             "value": "",
             "required": true
           },
